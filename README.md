@@ -3,7 +3,7 @@
 
 
 # 效果图
-<img src="../screen.png">
+<img src="screen.png">
 # 用法
 1 .配置xml
   

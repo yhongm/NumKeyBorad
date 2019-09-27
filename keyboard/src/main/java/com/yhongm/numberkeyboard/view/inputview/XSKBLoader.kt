@@ -209,9 +209,9 @@ class XSKBLoader(private val mContext: Context?) {
                         if (null == softKey) {
 //                            return null
                         }
-                        // Update the key position for the key.更新这个按键的位置对于按键
+
                         //更新下一个按键的位置
-                        // Update the position for next key.
+
                         mKeyXPos = softKey!!.mRightF
                         if (mXmlEventType == XmlResourceParser.START_TAG) {
                             attr = xrp.name

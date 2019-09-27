@@ -5,6 +5,15 @@
 # 效果图
 <img src="screen.png">
 # 用法
+## xml 节点属性说明
+*   ckeyboard 键盘跟节点   csk_bg_color键盘背景色属性 csk_t_color键盘按键颜色属性 csk_t_size键盘按键全局大小 height键盘高度属性 width键盘宽度属性
+*   row  键盘行节点        height键盘行高属性
+*   key  按键节点          height按键高度属性 width按键宽度属性 k_code按键keyCode属性 k_text按键显示属性 k_icon按键显示图片属性 press_color按键按下属性
+*   keys 按键数组节点      splitter按键数组分割字符属性,通过该属性将keys按键数组属性中的数组内容分割 最终渲染成多个按键key
+## 单位说明
+* %p                       按百分比
+* %sp                      按sp
+* %dp                      按dp
 1. 配置xml  
 
 ```xml
@@ -73,7 +82,6 @@
         <key 
             height="25%p"
             k_code="-9"
-          
             k_icon="@mipmap/ic_del"  
             k_size="24%sp"
             press_color="@color/softKeyColor"

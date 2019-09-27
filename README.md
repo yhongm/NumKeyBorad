@@ -4,7 +4,26 @@
 # 相比原生安卓自定义键盘增加了按键颜色,按键图片等等
 # 效果图
 <img src="screen.png">
-# 用法
+
+# 添加依赖
+```groovy
+allprojects {
+		repositories {
+			
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+
+```groovy
+dependencies {
+	        implementation 'com.github.yhongm:NumKeyBorad:Tag'
+	}
+```
+
+
+#  用法
 
 ##  xml节点属性说明
 1.     ckeyboard 键盘跟节点   csk_bg_color键盘背景色属性 csk_t_color键盘按键颜色属性 csk_t_size键盘按键全局大小 height键盘高度属性 width键盘宽度属性

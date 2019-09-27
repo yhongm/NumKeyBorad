@@ -18,7 +18,7 @@ allprojects {
 
 ```groovy
 dependencies {
-	        implementation 'com.github.yhongm:NumKeyBorad:Tag'
+	        implementation 'com.github.yhongm:NumKeyBorad:master-SNAPSHOT'
 	}
 ```
 

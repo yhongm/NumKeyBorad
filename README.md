@@ -5,16 +5,18 @@
 # 效果图
 <img src="screen.png">
 # 用法
-## xml 节点属性说明
-*   ckeyboard 键盘跟节点   csk_bg_color键盘背景色属性 csk_t_color键盘按键颜色属性 csk_t_size键盘按键全局大小 height键盘高度属性 width键盘宽度属性
-*   row  键盘行节点        height键盘行高属性
-*   key  按键节点          height按键高度属性 width按键宽度属性 k_code按键keyCode属性 k_text按键显示属性 k_icon按键显示图片属性 press_color按键按下属性
-*   keys 按键数组节点      splitter按键数组分割字符属性,通过该属性将keys按键数组属性中的数组内容分割 最终渲染成多个按键key
+
+##  xml节点属性说明
+1.     ckeyboard 键盘跟节点   csk_bg_color键盘背景色属性 csk_t_color键盘按键颜色属性 csk_t_size键盘按键全局大小 height键盘高度属性 width键盘宽度属性
+2.    row  键盘行节点        height键盘行高属性
+3.     key  按键节点          height按键高度属性 width按键宽度属性 k_code按键keyCode属性 k_text按键显示属性 k_icon按键显示图片属性 press_color按键按下属性
+4.     keys 按键数组节点      splitter按键数组分割字符属性,通过该属性将keys按键数组属性中的数组内容分割 最终渲染成多个按键key
 ## 单位说明
-* %p                       按百分比
-* %sp                      按sp
-* %dp                      按dp
-1. 配置xml  
+1.   %p                       按百分比
+2.   %sp                      按sp
+3.   %dp                      按dp
+
+## 配置xml  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,10 +96,11 @@
 
 ```kotlin
 val keyBoardUtil = KeyBoardUtil(applicationContext, R.layout.keyboardview, R.xml.num_pad)
-        keyBoardUtil.applyToEdit(edit_text) //应用到对应的EditText
+//初始化KeyBoardUtil
+        keyBoardUtil.applyToEdit(edit_text) //应用到对应的需要弹出自定义键盘的EditText
         keyBoardUtil.mKeyClickIntercept = { keyCode, keyText, editTextContent ->
             // click keyboard do something yhongm
-            //按键点击,处理按键点击事件
+            //按键点击,处理按键点击事件 
             var resultStr = handleKeyBoard(keyCode, keyText, editTextContent)
             if (resultStr != "error") {
                 resultStr

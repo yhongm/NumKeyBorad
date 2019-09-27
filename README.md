@@ -6,9 +6,9 @@
 <img src="screen.png">
 # 用法
 1. 配置xml  
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-
 <ckeyboard    
       
     csk_bg_color="@color/bgColor" 
